@@ -1,0 +1,60 @@
+{
+  "active_classes": [
+    { "name": "retinoid",    "description": "Vitamin A derivatives that increase cell turnover" },
+    { "name": "aha",         "description": "Alpha hydroxy acids (glycolic, lactic, mandelic)" },
+    { "name": "bha",         "description": "Beta hydroxy acids (salicylic acid)" },
+    { "name": "vitamin_c",   "description": "Ascorbic acid and stable derivatives" },
+    { "name": "niacinamide", "description": "Vitamin B3 — barrier support, pore minimizing" },
+    { "name": "benzoyl_peroxide", "description": "Antibacterial acne treatment" },
+    { "name": "antioxidant", "description": "Free radical protection (vitamin E, ferulic acid …)" },
+    { "name": "exfoliant",   "description": "Chemical or physical exfoliation" },
+    { "name": "spf",         "description": "Sun protection — always the last AM step" },
+    { "name": "peptide",     "description": "Short amino acid chains for collagen support" }
+  ],
+  "conflict_rules": [
+    {
+      "class_a": "retinoid",
+      "class_b": "aha",
+      "rule_type": "hard",
+      "reason": "Combining retinoids with AHAs in the same routine can cause significant irritation and compromise the skin barrier.",
+      "citation": "Draelos ZD. Cosmeceuticals. 2nd ed. Saunders Elsevier; 2009."
+    },
+    {
+      "class_a": "retinoid",
+      "class_b": "bha",
+      "rule_type": "hard",
+      "reason": "Retinoids and BHAs used together increase risk of over-exfoliation and barrier damage.",
+      "citation": "Kligman AM, et al. J Am Acad Dermatol. 1986."
+    },
+    {
+      "class_a": "vitamin_c",
+      "class_b": "niacinamide",
+      "rule_type": "soft",
+      "reason": "At high concentrations, vitamin C and niacinamide can form a yellow complex that temporarily reduces efficacy. Modern formulations often mitigate this.",
+      "citation": "Zoe Diana Draelos. J Cosmet Dermatol. 2004."
+    },
+    {
+      "class_a": "retinoid",
+      "class_b": "benzoyl_peroxide",
+      "rule_type": "hard",
+      "reason": "Benzoyl peroxide oxidizes retinoids, rendering them ineffective.",
+      "citation": "Cunliffe WJ, et al. J Dermatolog Treat. 2002."
+    }
+  ],
+  "timing_rules": [
+    { "class": "retinoid", "allowed_time": "pm_only",  "reason": "UV exposure degrades retinoids and increases photosensitivity." },
+    { "class": "spf",      "allowed_time": "am_only",  "reason": "SPF is a daytime protective step only." },
+    { "class": "aha",      "allowed_time": "pm_only",  "reason": "AHAs increase photosensitivity; use at night and follow with SPF in AM." },
+    { "class": "bha",      "allowed_time": "pm_only",  "reason": "Same photosensitivity concern as AHAs." }
+  ],
+  "step_order": [
+    { "product_type": "cleanser",     "order_index": 1 },
+    { "product_type": "toner",        "order_index": 2 },
+    { "product_type": "essence",      "order_index": 3 },
+    { "product_type": "serum",        "order_index": 4 },
+    { "product_type": "eye_cream",    "order_index": 5 },
+    { "product_type": "moisturizer",  "order_index": 6 },
+    { "product_type": "face_oil",     "order_index": 7 },
+    { "product_type": "spf",          "order_index": 8 }
+  ]
+}

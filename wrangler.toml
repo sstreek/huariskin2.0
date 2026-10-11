@@ -1,0 +1,16 @@
+name = "huariskin"
+main = "src/main.py"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["python_workers"]
+
+# D1 is Cloudflare's SQLite database. "binding" is the name you use in Python
+# to access it (env.DB). Fill in database_id after running:
+#   wrangler d1 create huariskin
+[[d1_databases]]
+binding = "DB"
+database_name = "huariskin"
+database_id = "YOUR_DATABASE_ID_HERE"
+
+# Static assets (CSS, JS) are served from the /static directory
+[assets]
+directory = "src/static"

@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "Daily Microfoliant",
+      "brand": "Dermalogica",
+      "product_type": "exfoliant",
+      "ingredients_in_label_order": [
+        "rice starch", "salicylic acid", "papain", "phytic acid"
+      ]
+    },
+    {
+      "name": "Advanced Retinol 0.5% Serum",
+      "brand": "Paula's Choice",
+      "product_type": "serum",
+      "ingredients_in_label_order": [
+        "retinol", "niacinamide", "glycerin", "tocopherol"
+      ]
+    }
+  ]
+}

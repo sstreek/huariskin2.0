@@ -1,0 +1,29 @@
+{
+  "ingredients": [
+    {
+      "canonical_name": "retinol",
+      "aliases": ["vitamin a", "retinyl palmitate", "retinaldehyde"],
+      "classes": ["retinoid"]
+    },
+    {
+      "canonical_name": "glycolic_acid",
+      "aliases": ["glycolic acid"],
+      "classes": ["aha", "exfoliant"]
+    },
+    {
+      "canonical_name": "vitamin_c",
+      "aliases": ["ascorbic acid", "l-ascorbic acid", "sodium ascorbyl phosphate", "ascorbyl glucoside"],
+      "classes": ["vitamin_c", "antioxidant"]
+    },
+    {
+      "canonical_name": "niacinamide",
+      "aliases": ["vitamin b3", "nicotinamide"],
+      "classes": ["niacinamide"]
+    },
+    {
+      "canonical_name": "vitamin_e",
+      "aliases": ["tocopherol", "tocopheryl acetate"],
+      "classes": ["antioxidant"]
+    }
+  ]
+}

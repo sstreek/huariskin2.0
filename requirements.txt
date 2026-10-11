@@ -1,0 +1,4 @@
+# Cloudflare Python Workers use Pyodide — only pure-Python packages work.
+# Both of these are supported out of the box.
+fastapi
+jinja2
