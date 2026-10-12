@@ -6,6 +6,13 @@ The mission of this project is to simplify skincare routines by using research-b
 
 Many people are still unaware of how to properly combine active ingredients.
 
+What works right now:
+Normalizer - This is where we can take ingredient names and standardize the data
+Conflicts - Ingredient conflicts, this is essential to test throughly to prevent ingredient conflicts
+Timing - Ensures the time of day is suitable for the product
+
+All of these also have their own tests and edge cases
+
 Disclaimer
 
 This project is not medical advice. For skin concerns or conditions, talk to a dermatologist or other qualified healthcare provider.
