@@ -9,3 +9,7 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
