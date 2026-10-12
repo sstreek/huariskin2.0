@@ -17,12 +17,11 @@ def test_no_conflict_when_only_one_class_present():
     assert conflicts == []
 
 
-def test_retinoid_with_aha_and_bha_finds_both(): #if it finds both rules to be true
+def test_retinoid_with_aha_and_bha_finds_both():  # if it finds both rules to be true
     conflicts = find_conflicts({"retinoid", "aha", "bha"}, RULES)
     assert len(conflicts) == 2
-    
+
 
 def test_no_conflict_when_only_class_b_present():
     conflicts = find_conflicts({"aha"}, RULES)
     assert conflicts == []
-

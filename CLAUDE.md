@@ -31,7 +31,7 @@ with citations, ~20 real products with ingredients in label order.
 
 ## Stack
 - Backend: Python (FastAPI) on Cloudflare Python Workers
-- Database: DynamoDB
+- Database: D1
 - Frontend: server-rendered Jinja2 templates + htmx, plain CSS,
   minimal JavaScript, served by the same Worker
 - Tests: pytest

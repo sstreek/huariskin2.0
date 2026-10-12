@@ -1,4 +1,4 @@
-#dictionary look up with a fall back
+# dictionary look up with a fall back
 
 
 def build_alias_table(aliases: list[dict]) -> dict[str, str]:
@@ -8,15 +8,14 @@ def build_alias_table(aliases: list[dict]) -> dict[str, str]:
     return table
 
 
-
 def normalize(raw_name: str, alias_table: dict[str, str]) -> str:
     cleaned = raw_name.strip().lower()
     return alias_table.get(cleaned, cleaned)
 
 
-
-
-def normalize_all(raw_names: list[str], alias_table: dict[str, str]) -> tuple[list[str], list[str]]:
+def normalize_all(
+    raw_names: list[str], alias_table: dict[str, str]
+) -> tuple[list[str], list[str]]:
     names = []
     unmatched = []
     for raw in raw_names:

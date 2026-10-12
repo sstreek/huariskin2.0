@@ -13,4 +13,5 @@ templates = Jinja2Templates(directory="src/templates")
 # The `env` object gives you access to bindings like env.DB (your D1 database).
 async def on_fetch(request, env):
     import asgi
+
     return await asgi.fetch(app, request, env)
